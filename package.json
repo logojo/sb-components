@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_f4fc1bd7a016c39"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -26,9 +27,12 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
+    "chromatic": "^6.18.2",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.18",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "my-storybook@0.0.0"
 }

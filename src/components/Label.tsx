@@ -2,6 +2,10 @@ import './label.css';
 
 interface LabelProps {
   /**
+   * What background color to use
+   */
+  backgroundColor?: string;
+  /**
    * To UpperCase the label content
    */
   allCaps?: boolean;
@@ -29,6 +33,7 @@ interface LabelProps {
  * Primary UI component for user interaction
  */
 export const Label = ({
+  backgroundColor = 'transparent', 
   size = 'normal',
   color = 'primary',
   customColor,
@@ -39,7 +44,7 @@ export const Label = ({
   return (
     <span
       className={`label ${size} text-${color}` }
-      style={{ color: customColor }}
+      style={{ color: customColor, backgroundColor }}
       {...props}
     >
       {

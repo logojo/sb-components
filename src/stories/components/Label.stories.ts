@@ -8,7 +8,7 @@ const meta: Meta<typeof Label> = {
   tags: ['autodocs'],
   argTypes: {
     color: { control: 'select' },
-    customColor: { control: 'color' }
+    customColor: { control: 'color' },
   },
 };
 
@@ -46,4 +46,11 @@ export const AllCaps: Story = {
   },
 };
 
- 
+export const customBackgroundColor: Story = {
+  args: {
+    size: 'h3',
+    customColor: 'white',
+    label: 'Label',
+    backgroundColor: 'black'
+  },
+};
